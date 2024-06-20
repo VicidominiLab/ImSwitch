@@ -53,6 +53,8 @@ class BrightEyesMCSManager(DetectorManager):
     def __init__(self, detectorInfo, name, **_lowLevelManagers):
         self.__logger = initLogger(self, instanceName=name)
 
+        # TODO: here everything is a to-do... many things to remove and correct
+
         host = detectorInfo.managerProperties['cameraHost']
         port = detectorInfo.managerProperties['cameraPort']
 

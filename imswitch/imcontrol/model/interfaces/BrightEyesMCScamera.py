@@ -41,7 +41,7 @@ class BrightEyesMCSCamera:
         self.camera = BrightEyesMCSNetwork(self.host, self.port, is_debug=True)
 
         self.frame = np.zeros((self.internal_property["image_height"], self.internal_property["image_width"]))
-
+        #TODO: here everything is a to-do... many things to remove and correct
     def put_frame(self, frame):
         self.frame = frame
         self.frame = cv2.resize(self.frame, (self.internal_property["image_width"], self.internal_property["image_height"]))
